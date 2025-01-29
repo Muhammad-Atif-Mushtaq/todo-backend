@@ -7,7 +7,7 @@ const port = process.env.PORT || 9001;  // Use environment variable PORT or defa
 
 app.use(
   cors({
-    origin: '*', // Only allow requests from the frontend
+    origin: '*', // allow requests from the frontend
     methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed HTTP methods
     credentials: true, // Allow cookies and authorization headers
   })
